@@ -1,0 +1,178 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+}
+
+/* Here starts the menu design*/
+.card {
+  font-family:Arial;
+
+}
+
+
+.main {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.linkBtn {
+  background-color: #3a3a3a; /* white */
+  border: 1px solid white;
+  padding:10px;
+  margin-bottom:20px;
+  width:200px;
+  text-align:center;
+  border-radius:10px;
+}
+
+.linkBtn:hover {
+  border-width:3px;
+}
+
+a {
+  text-decoration:none;
+  color:white;
+}
+  
+/* Here ends the menu design*/
+
+/* Here starts the play design*/
+
+
+
+.container {
+  position: relative;
+  width: 40%;
+  height: 50%;
+  max-width: 80%;
+  max-height: 80%;
+  outline: 1px solid white;
+  background-color: black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px;
+  font-size: 20px;
+  transform: scale (3) translateY(50%);
+  display: inline-block;
+}
+.parent {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+
+}
+.game-canvas {
+  background-color: black;
+  height: 70%;
+  width:100%;
+  position: absolute;
+  top: 0;
+  left:0;
+  right: 0;
+
+
+
+}
+.user-interface {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.stat {
+  background-color: white;
+  width: 200px;
+  height: 70px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: 4px black dotted;
+  padding: 5px;
+  z-index: 5;
+}
+.stat-bg {
+  position: relative
+}
+.interface-back{
+  height: 5px;
+  background-color: #ccc; 
+  
+  position: absolute;
+  top:0;
+  bottom:0;
+  right: 0;
+}
+.user-hp{
+  height: 5px;
+  background-color: green;
+  margin-top: 10px;
+}
+.bottom {
+  height: 140px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 4px white solid;
+  display: flex;
+}
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 66.66%;
+  padding: 5px;
+  color: white;
+}
+
+
+.btn-grid {
+  width: 33.33%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  padding: 5px;
+  border-left: 4px white solid;
+}
+
+.btn {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  border: 1px solid hsl(0, 0%, 44%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+/* Here ends  the play design*/
